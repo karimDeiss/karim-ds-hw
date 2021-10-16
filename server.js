@@ -26,7 +26,6 @@ app.post("/person/add",(req,res) => {
     res.status(200).json({success : true,message : "Person was added successfully"});
 })
 
-
-app.listen("https://karim-ds-hw.herokuapp.com",() => {
+app.listen(process.env.PORT || 3000,() => {
      console.log("APP LISTENING");
 });
