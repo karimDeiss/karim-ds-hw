@@ -27,6 +27,6 @@ app.post("/person/add",(req,res) => {
 })
 
 
-app.listen(3000,"localhost",() => {
+app.listen(() => {
      console.log("APP LISTENING");
-})
+});
