@@ -7,6 +7,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get('/',(req,res) => {
+    res.status(200).send("<h1> Full Stack Course </h1>")
+})
+
 app.get("/person",(req,res) => {
     const personObject = {
         name : "Hussien",
